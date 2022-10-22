@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>FrontendMentor</title>
+  </head>
+  <body>
+    <main>
+      <section class="card-container">
+        <div class="card-front">
+          <img class="logo" src="images\card-logo.svg" alt="" srcset="" />
+          <p class="printed-number">0000 0000 0000 0000</p>
+          <p class="printed-name">Jane Appleseed</p>
+          <p class="printed-expiry">00/00</p>
+        </div>
+        <div class="card-back">
+          <p class="printed-cvc">000</p>
+        </div>
+      </section>
+      <section class="form-container">
+        <form action="">
+          <div class="input-container name">
+            <label for="name">cardholder name</label>
+            <input
+              type="text"
+              maxlength="25"
+              id="name"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <div class="error name"></div>
+          </div>
+          <div class="input-container card-number">
+            <label for="card-number">card number</label>
+            <input
+              type="text"
+              maxlength="19"
+              id="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <div class="error card-number"><p></p></div>
+          </div>
+          <div class="input-container exp-date">
+            <label for="exp-month">Exp. Date (MM/YY)</label>
+            <div>
+              <input
+                type="text"
+                maxlength="2"
+                id="exp-month"
+                placeholder="MM"
+              />
+            </div>
+            <div>
+              <input type="text" maxlength="2" id="exp-year" placeholder="YY" />
+            </div>
+            <div class="error exp-date"></div>
+          </div>
+          <div class="input-container cvc">
+            <label for="cvc-input">cvc</label>
+            <input
+              type="text"
+              id="cvc-input"
+              maxlength="3"
+              placeholder="e.g. 123"
+            />
+            <div class="error cvc"></div>
+          </div>
+          <button>confirm</button>
+        </form>
+        <section class="remove confirmed">
+          <img src="images\icon-complete.svg" alt="completed" />
+          <h1>Thank You!</h1>
+          <p>We've added your card details</p>
+          <button id="continue">Continue</button>
+        </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
