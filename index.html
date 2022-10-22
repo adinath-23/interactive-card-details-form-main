@@ -15,18 +15,22 @@
   </head>
   <body>
     <main>
-      <section class="card-container">
+      <div class="card-container">
         <div class="card-front">
-          <img class="logo" src="images/card-logo.svg" alt="logo" srcset="" />
-          <p class="printed-number">0000 0000 0000 0000</p>
-          <p class="printed-name">Jane Appleseed</p>
-          <p class="printed-expiry">00/00</p>
+          <div class="logo-container">
+            <img class="logo" src="images/card-logo.svg" alt="logo" />
+          </div>
+          <div class="print-container">
+            <p class="printed-number">0000 0000 0000 0000</p>
+            <p class="printed-name">Jane Appleseed</p>
+            <p class="printed-expiry">00/00</p>
+          </div>
         </div>
         <div class="card-back">
           <p class="printed-cvc">000</p>
         </div>
-      </section>
-      <section class="form-container">
+      </div>
+      <div class="form-container">
         <form action="/">
           <div class="input-container name">
             <label for="name">cardholder name</label>
@@ -75,13 +79,13 @@
           </div>
           <button>confirm</button>
         </form>
-        <section class="remove confirmed">
+        <div class="remove confirmed">
           <img src="images/icon-complete.svg" alt="completed" />
           <h1>Thank You!</h1>
           <p>We've added your card details</p>
           <button id="continue">Continue</button>
-        </section>
-      </section>
+        </div>
+      </div>
     </main>
     <script src="app.js"></script>
   </body>
